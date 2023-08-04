@@ -1,4 +1,4 @@
-<h2 align="center">tsukuyomi - image | video | audio compressor written in golang</h2>
+<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3>
 
 ###
 
