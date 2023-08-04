@@ -53,10 +53,16 @@
 
 ## installation
 
-- use git clone to clone the repo ->
+- use go get ->
 
 ```
-git clone https://github.com/kenjitheman/tsukuyomi/
+go get github.com/kenjitheman/tsukuyomi
+```
+
+- or use git clone to clone the repo ->
+
+```
+git clone https://github.com/kenjitheman/tsukuyomi
 ```
 
 ## usage
