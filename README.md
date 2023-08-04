@@ -47,12 +47,6 @@
 - `HEIF`
 - `JPEG 2000`
 
-### tsukuyomi usage
-
-```
-// in dev stage
-```
-
 ## installation
 
 - use go get ->
