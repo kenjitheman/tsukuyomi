@@ -1,5 +1,5 @@
 <h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3>
-
+# // in dev stage rn
 ###
 
 <img align="right" height="220" src="https://media.tenor.com/3wBClQGtDkgAAAAC/hououin-kyouma.gif"  />
@@ -12,6 +12,38 @@
 
 ###
 
+### supported audio formats:
+
+- `MP3`
+- `AAC`
+- `WAV`
+- `FLAC`
+- `OGG`
+- `WMA`
+- `AIFF`
+- `ALAC`
+
+### supported video formats:
+
+- `MP4`
+- `AVI`
+- `MKV`
+- `MOV`
+- `WMV`
+- `FLV`
+- `WebM`
+- `H.264`
+
+### supported image formats:
+
+- `JPEG`
+- `PNG`
+- `GIF`
+- `BMP`
+- `TIFF`
+- `WebP`
+- `HEIF`
+- `JPEG 2000`
 
 ### tsukuyomi usage
 
