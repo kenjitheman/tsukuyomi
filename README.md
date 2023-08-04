@@ -1,5 +1,7 @@
-<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3>
-# // in dev stage rn
+<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3> 
+
+# in dev stage rn
+
 ###
 
 <img align="right" height="220" src="https://media.tenor.com/3wBClQGtDkgAAAAC/hououin-kyouma.gif"  />
