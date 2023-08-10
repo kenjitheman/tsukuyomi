@@ -34,6 +34,7 @@
 - `WMV`
 - `FLV`
 - `WebM`
+- `H.264`
 
 ### supported image formats:
 
@@ -45,6 +46,43 @@
 - `WebP`
 - `HEIF`
 - `JPEG 2000`
+
+## project structure
+
+```
+.
+├── cmd
+│   └── main.go
+├── core
+│   ├── audio
+│   │   ├── aac.go
+│   │   ├── aiff.go
+│   │   ├── alac.go
+│   │   ├── flac.go
+│   │   ├── mp3.go
+│   │   ├── ogg.go
+│   │   ├── wav.go
+│   │   └── wma.go
+│   ├── img
+│   │   ├── bmp.go
+│   │   ├── gif.go
+│   │   ├── heif.go
+│   │   ├── jpeg2000.go
+│   │   ├── jpeg.go
+│   │   ├── png.go
+│   │   ├── tiff.go
+│   │   └── webp.go
+│   └── video
+│       ├── avi.go
+│       ├── flv.go
+│       ├── mkv.go
+│       ├── mov.go
+│       ├── mp4.go
+│       ├── webm.go
+│       └── wmv.go
+├── go.mod
+└── README.md
+```
 
 ## installation
 
