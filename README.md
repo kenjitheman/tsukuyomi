@@ -34,6 +34,7 @@
 - `WMV`
 - `FLV`
 - `WebM`
+- `H.264`
 
 ### supported image formats:
 
