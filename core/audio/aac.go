@@ -1,9 +1,9 @@
 package audio
 
 import (
-
+  "fmt"
 )
 
-func Aac() {
-
+func CompressAac(filename string) {
+  fmt.Println("[OK] compressing... ", filename)
 }
