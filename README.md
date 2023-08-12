@@ -41,11 +41,8 @@
 - `JPEG`
 - `PNG`
 - `GIF`
-- `BMP`
 - `TIFF`
 - `WebP`
-- `HEIF`
-- `JPEG 2000`
 
 ## project structure
 
@@ -64,10 +61,7 @@
 │   │   ├── wav.go
 │   │   └── wma.go
 │   ├── img
-│   │   ├── bmp.go
 │   │   ├── gif.go
-│   │   ├── heif.go
-│   │   ├── jpeg2000.go
 │   │   ├── jpeg.go
 │   │   ├── png.go
 │   │   ├── tiff.go
@@ -80,7 +74,9 @@
 │       ├── mp4.go
 │       ├── webm.go
 │       └── wmv.go
+├── Dockerfile
 ├── go.mod
+├── go.sum
 └── README.md
 ```
 
@@ -102,6 +98,11 @@ git clone https://github.com/kenjitheman/tsukuyomi
 
 - you can run it using: go run main.go
 
+```
+cd cmd
+go run main.go
+```
+
 - or using docker:
 
 ```
@@ -111,10 +112,10 @@ docker run -d -p 8080:80 your_image_name
 
 ## contributing
 
-- Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+- pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change
 
-- Please make sure to update tests as appropriate.
+- please make sure to update tests as appropriate
 
 ## license
 
