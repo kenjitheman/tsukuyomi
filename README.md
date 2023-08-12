@@ -1,4 +1,4 @@
-<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3> 
+<h4 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h4> 
 
 # in dev stage rn
 
@@ -100,8 +100,13 @@ git clone https://github.com/kenjitheman/tsukuyomi
 
 ## usage
 
+- you can run it using: go run main.go
+
+- or using docker:
+
 ```
-// in dev stage
+docker build -t your_image_name .
+docker run -d -p 8080:80 your_image_name
 ```
 
 ## contributing
@@ -113,4 +118,4 @@ to discuss what you would like to change.
 
 ## license
 
-[MIT](https://choosealicense.com/licenses/mit/)
+- `[MIT](https://choosealicense.com/licenses/mit/)`
