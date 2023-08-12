@@ -22,7 +22,7 @@ func main(fileName string, quality int) {
 		return
 	}
 
-	outputFile, err := os.Create("output.jpg")
+	outputFile, err := os.Create(fileName)
 	if err != nil {
 		fmt.Println("[ERROR] error creating JPEG file:", err)
 		return
