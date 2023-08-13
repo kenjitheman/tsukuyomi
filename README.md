@@ -1,4 +1,4 @@
-<h4 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h4> 
+<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3>
 
 # in dev stage rn
 
@@ -17,13 +17,10 @@
 ### supported audio formats:
 
 - `MP3`
-- `AAC`
 - `WAV`
 - `FLAC`
 - `OGG`
-- `WMA`
 - `AIFF`
-- `ALAC`
 
 ### supported video formats:
 
@@ -52,14 +49,11 @@
 │   └── main.go
 ├── core
 │   ├── audio
-│   │   ├── aac.go
 │   │   ├── aiff.go
-│   │   ├── alac.go
 │   │   ├── flac.go
 │   │   ├── mp3.go
 │   │   ├── ogg.go
-│   │   ├── wav.go
-│   │   └── wma.go
+│   │   └── wav.go
 │   ├── img
 │   │   ├── gif.go
 │   │   ├── jpeg.go
@@ -112,8 +106,8 @@ docker run -d -p 8080:80 your_image_name
 
 ## contributing
 
-- pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change
+- pull requests are welcome. For major changes, please open an issue first to
+  discuss what you would like to change
 
 - please make sure to update tests as appropriate
 
