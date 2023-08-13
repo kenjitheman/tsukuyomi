@@ -4,10 +4,12 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
-	// "main.go/core/audio"
-	// "main.go/core/img"
-	// "main.go/core/video"
+
+	"main.go/core/audio"
+	"main.go/core/img"
+	"main.go/core/video"
 )
 
 func main() {
@@ -40,21 +42,15 @@ func main() {
 
 		switch command {
 		case "mp3":
-			fmt.Println("mp3", fileName)
-		case "aac":
-			fmt.Println("aac", fileName)
+			audio.CompressMp3(fileName)
 		case "aiff":
-			fmt.Println("aiff", fileName)
-		case "alac":
-			fmt.Println("alac", fileName)
+			audio.CompressAiff(fileName)
 		case "flac":
-			fmt.Println("flac", fileName)
+			audio.CompressFlac(fileName)
 		case "ogg":
-			fmt.Println("ogg", fileName)
+			audio.CompressOgg(fileName)
 		case "wav":
-			fmt.Println("wav", fileName)
-		case "wma":
-			fmt.Println("wma", fileName)
+			audio.CompressWav(fileName)
 		default:
 			fmt.Println("unknown file format: ", fileName)
 		}
@@ -76,21 +72,19 @@ func main() {
 
 		switch command {
 		case "avi":
-			fmt.Println("avi", fileName)
+			video.CompressAvi(fileName)
 		case "flv":
-			fmt.Println("flv", fileName)
+			video.CompressFlv(fileName)
 		case "mkv":
-			fmt.Println("mkv", fileName)
+			video.CompressMkv(fileName)
 		case "mov":
-			fmt.Println("mov", fileName)
+			video.CompressMov(fileName)
 		case "mp4":
-			fmt.Println("mp4", fileName)
+			video.CompressMp4(fileName)
 		case "webm":
-			fmt.Println("webm", fileName)
+			video.CompressWebM(fileName)
 		case "wmv":
-			fmt.Println("wmv", fileName)
-		case "h264":
-			fmt.Println("h264", fileName)
+			video.CompressWmv(fileName)
 		default:
 			fmt.Println("unknown file format: ", fileName)
 		}
@@ -108,24 +102,29 @@ func main() {
 
 		command := parts[0]
 		fileName := parts[1]
+		quality, err := strconv.Atoi(parts[2])
+		if err != nil {
+			fmt.Println("Error:", err)
+			return
+		}
 
 		switch command {
 		case "png":
-			fmt.Println("png", fileName)
+			img.CompressPng(fileName)
 		case "jpeg":
-			fmt.Println("jpeg", fileName)
+			fmt.Println(
+				"jpeg cannot be compressed without quality loss, you need to specify quality (1-100)\nexample: man.jpeg, 50",
+			)
+			img.CompressJpeg(fileName, quality)
 		case "webp":
-			fmt.Println("webp", fileName)
+			fmt.Println(
+				"webp cannot be compressed without quality loss, you need to specify quality (1-100)\nexample: man.webp, 50",
+			)
+			img.CompressWebp(fileName, quality)
 		case "tiff":
-			fmt.Println("tiff", fileName)
-		case "jpeg2000":
-			fmt.Println("jpeg2000", fileName)
-		case "heif":
-			fmt.Println("heif", fileName)
-		case "bmp":
-			fmt.Println("bmp", fileName)
+			img.CompressTiff(fileName)
 		case "gif":
-			fmt.Println("gif", fileName)
+			img.CompressGif(fileName)
 		default:
 			fmt.Println("unknown file format: ", fileName)
 		}
