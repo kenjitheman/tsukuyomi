@@ -1,6 +1,6 @@
-<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3>
+<h3 align="center">tsukuyomi - image, video, audio compressor/re-encoder library | without quality loss</h3>
 
-# in dev stage rn
+#### was created for self use
 
 ###
 
@@ -13,6 +13,18 @@
 </div>
 
 ###
+
+#### third party libraries this library using:
+
+- `github.com/chai2010/webp`
+
+- `github.com/hajimehoshi/go-mp3`
+
+- `github.com/icza/bitio`
+
+- `github.com/mewkiz/flac`
+
+- `github.com/mewkiz/pkg`
 
 ### supported audio formats:
 
