@@ -1,6 +1,4 @@
-<h3 align="center">tsukuyomi - image | video | audio compressor without quality loss written in golang</h3>
-
-# in dev stage rn
+<h3 align="center">tsukuyomi - image, video, audio compressor/re-encoder without quality loss</h3>
 
 ###
 
