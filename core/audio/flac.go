@@ -17,7 +17,6 @@ func CompressFlac(fileName string) {
 	inputFileInfo, err := inputFile.Stat()
 	if err != nil {
 		fmt.Println("[ERROR] error getting input file info:", err)
-		return
 	}
 
 	outputFile, err := os.Create(fileName)
