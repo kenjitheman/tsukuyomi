@@ -17,7 +17,6 @@ func CompressOgg(fileName string) {
 	oggDecoder, err := ogg.NewDecoder(inputFile)
 	if err != nil {
 		fmt.Println("[ERROR] error creating Ogg decoder:", err)
-		return
 	}
 	defer oggDecoder.Close()
 

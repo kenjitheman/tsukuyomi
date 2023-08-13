@@ -31,7 +31,6 @@
 - `WMV`
 - `FLV`
 - `WebM`
-- `H.264`
 
 ### supported image formats:
 
@@ -108,8 +107,6 @@ docker run -d -p 8080:80 your_image_name
 
 - pull requests are welcome. For major changes, please open an issue first to
   discuss what you would like to change
-
-- please make sure to update tests as appropriate
 
 ## license
 
