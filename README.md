@@ -1,5 +1,7 @@
 <h3 align="center">tsukuyomi - image, video, audio compressor/re-encoder library</h3>
 
+###
+
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="200" alt="go logo"  />
 </div>
@@ -47,7 +49,29 @@
 ## project structure
 
 ```
-
+├── audio
+│   ├── aiff.go
+│   ├── flac.go
+│   ├── mp3.go
+│   ├── ogg.go
+│   └── wav.go
+├── go.mod
+├── img
+│   ├── gif.go
+│   ├── jpeg.go
+│   ├── png.go
+│   ├── tiff.go
+│   └── webp.go
+├── LICENSE
+├── README.md
+└── video
+    ├── avi.go
+    ├── flv.go
+    ├── mkv.go
+    ├── mov.go
+    ├── mp4.go
+    ├── webm.go
+    └── wmv.go
 ```
 
 ## installation
@@ -60,7 +84,7 @@ go get github.com/kenjitheman/tsukuyomi
 
 ## contributing
 
-- pull requests are welcome. For major changes, please open an issue first to
+- pull requests are welcome, for major changes, please open an issue first to
   discuss what you would like to change
 
 ## license
