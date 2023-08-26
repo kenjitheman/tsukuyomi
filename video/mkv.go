@@ -1,4 +1,4 @@
-package video
+package tsukuyomi
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"os/exec"
 )
 
-func CompressAvi(fileName string) {
+func CompressMkv(fileName string) {
 	cmd := exec.Command(
 		"ffmpeg",
 		"-i",
@@ -29,5 +29,5 @@ func CompressAvi(fileName string) {
 		fmt.Println("[ERROR] error running FFmpeg:", err)
 	}
 
-	fmt.Println("[SUCCESS] AVI compression has been completed. Compressed file:", fileName)
+	fmt.Println("[SUCCESS] MKV compression has been completed. Compressed file:", fileName)
 }

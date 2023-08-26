@@ -1,4 +1,4 @@
-package video
+package tsukuyomi
 
 import (
 	"fmt"
@@ -6,17 +6,17 @@ import (
 	"os/exec"
 )
 
-func CompressWebM(fileName string) {
+func CompressAvi(fileName string) {
 	cmd := exec.Command(
 		"ffmpeg",
 		"-i",
 		fileName,
 		"-c:v",
-		"libvpx-vp9",
-		"-b:v",
-		"1M",
+		"libx264",
+		"-crf",
+		"23",
 		"-c:a",
-		"libopus",
+		"aac",
 		"-b:a",
 		"128k",
 		fileName,
@@ -29,5 +29,5 @@ func CompressWebM(fileName string) {
 		fmt.Println("[ERROR] error running FFmpeg:", err)
 	}
 
-	fmt.Println("[SUCCESS] WebM compression has been completed. Compressed file:", fileName)
+	fmt.Println("[SUCCESS] AVI compression has been completed. Compressed file:", fileName)
 }
