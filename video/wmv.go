@@ -1,4 +1,4 @@
-package video
+package tsukuyomi
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"os/exec"
 )
 
-func CompressMov(fileName string) {
+func CompressWmv(fileName string) {
 	cmd := exec.Command(
 		"ffmpeg",
 		"-i",
@@ -29,5 +29,5 @@ func CompressMov(fileName string) {
 		fmt.Println("[ERROR] error running FFmpeg:", err)
 	}
 
-	fmt.Println("[SUCCESS] MOV compression has been completed. Compressed file:", fileName)
+	fmt.Println("[SUCCESS] WMV compression has been completed. Compressed file:", fileName)
 }

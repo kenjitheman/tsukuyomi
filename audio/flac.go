@@ -1,4 +1,4 @@
-package audio
+package tsukuyomi
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/mewkiz/flac"
 )
 
-func CompressWav(fileName string) {
+func CompressFlac(fileName string) {
 	inputFile, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println("[ERROR] error opening input file:", err)
@@ -33,11 +33,8 @@ func CompressWav(fileName string) {
 
 	err = encoder.Encode(inputFile, uint32(inputFileInfo.Size()))
 	if err != nil {
-		fmt.Println("[ERROR] error encoding to FLAC:", err)
+		fmt.Println("[ERROR] error encoding to compressed FLAC:", err)
 	}
 
-	fmt.Println(
-		"[SUCCESS] WAV compression using FLAC has been completed. Compressed file:",
-		fileName,
-	)
+	fmt.Println("[SUCCESS] FLAC compression has been completed. Compressed file:", fileName)
 }
