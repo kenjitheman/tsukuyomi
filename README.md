@@ -1,4 +1,4 @@
-<h3 align="center">tsukuyomi - image, video, audio compressor/re-encoder library | without quality loss</h3>
+<h3 align="center">tsukuyomi - image, video, audio compressor/re-encoder library</h3>
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="200" alt="go logo"  />
