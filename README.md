@@ -8,43 +8,43 @@
 
 ###
 
-#### third party libraries this library using:
+- ### third party libraries this library using:
 
-- `github.com/chai2010/webp`
+  - `github.com/chai2010/webp`
+  
+  - `github.com/hajimehoshi/go-mp3`
+  
+  - `github.com/icza/bitio`
+  
+  - `github.com/mewkiz/flac`
+  
+  - `github.com/mewkiz/pkg`
 
-- `github.com/hajimehoshi/go-mp3`
+- ### supported audio formats:
 
-- `github.com/icza/bitio`
+  - `MP3`
+  - `WAV`
+  - `FLAC`
+  - `OGG`
+  - `AIFF`
 
-- `github.com/mewkiz/flac`
+- ### supported video formats:
 
-- `github.com/mewkiz/pkg`
+  - `MP4`
+  - `AVI`
+  - `MKV`
+  - `MOV`
+  - `WMV`
+  - `FLV`
+  - `WebM`
 
-### supported audio formats:
+- ### supported image formats:
 
-- `MP3`
-- `WAV`
-- `FLAC`
-- `OGG`
-- `AIFF`
-
-### supported video formats:
-
-- `MP4`
-- `AVI`
-- `MKV`
-- `MOV`
-- `WMV`
-- `FLV`
-- `WebM`
-
-### supported image formats:
-
-- `JPEG`
-- `PNG`
-- `GIF`
-- `TIFF`
-- `WebP`
+  - `JPEG`
+  - `PNG`
+  - `GIF`
+  - `TIFF`
+  - `WebP`
 
 ## project structure
 
@@ -75,8 +75,6 @@
 ```
 
 ## installation
-
-- use go get:
 
 ```
 go get github.com/kenjitheman/tsukuyomi
