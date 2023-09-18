@@ -48,7 +48,7 @@
 
 ## project structure
 
-```
+```go
 ├── audio
 │   ├── aiff.go
 │   ├── flac.go
@@ -76,7 +76,7 @@
 
 ## installation
 
-```
+```shell
 go get github.com/kenjitheman/tsukuyomi
 ```
 
