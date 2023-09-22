@@ -1,4 +1,4 @@
-<h3 align="center">tsukuyomi - image, video, audio compressor/re-encoder library</h3>
+## image, video, audio compressor/re-encoder library
 
 ###
 
