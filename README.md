@@ -1,4 +1,4 @@
-## image, video, audio compressor/re-encoder library
+## Image, video, audio compressor/re-encoder library/toolkit/another abstraction
 
 ###
 
@@ -8,7 +8,7 @@
 
 ###
 
-- ### third party libraries this library using:
+- ### Third party libraries this library using:
 
   - `github.com/chai2010/webp`
   
@@ -20,7 +20,7 @@
   
   - `github.com/mewkiz/pkg`
 
-- ### supported audio formats:
+- ### Supported audio formats:
 
   - `MP3`
   - `WAV`
@@ -28,7 +28,7 @@
   - `OGG`
   - `AIFF`
 
-- ### supported video formats:
+- ### Supported video formats:
 
   - `MP4`
   - `AVI`
@@ -38,7 +38,7 @@
   - `FLV`
   - `WebM`
 
-- ### supported image formats:
+- ### Supported image formats:
 
   - `JPEG`
   - `PNG`
@@ -46,9 +46,11 @@
   - `TIFF`
   - `WebP`
 
-## project structure
+## Project structure
 
 ```go
+tsukuyomi
+│
 ├── audio
 │   ├── aiff.go
 │   ├── flac.go
@@ -74,17 +76,17 @@
     └── wmv.go
 ```
 
-## installation
+## Installation
 
-```shell
+```sh
 go get github.com/kenjitheman/tsukuyomi
 ```
 
-## contributing
+## Contributing
 
-- pull requests are welcome, for major changes, please open an issue first to
-  discuss what you would like to change
+- Pull requests are welcome, for major changes, please open an issue first to
+  discuss what you would like to change.
 
-## license
+## License
 
 - [MIT](https://choosealicense.com/licenses/mit/)
