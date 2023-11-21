@@ -76,7 +76,7 @@
 
 ## Installation
 
-```shell
+```sh
 go get github.com/kenjitheman/tsukuyomi
 ```
 
