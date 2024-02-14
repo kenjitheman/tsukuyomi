@@ -1,3 +1,3 @@
-module github.com/btwkenji/tsukuyomi
+module github.com/kenjitheman/tsukuyomi
 
 go 1.20
